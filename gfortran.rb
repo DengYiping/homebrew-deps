@@ -60,7 +60,7 @@ class Gfortran < Formula
     ]
 
     # https://github.com/Homebrew/homebrew/issues/19584#issuecomment-19661219
-    if build.include? 'enable-multilib'?
+    if build.include? 'enable-multilib'
       args << '--enable-multilib'
     else
       args << '--disable-multilib'
